@@ -1,0 +1,126 @@
+Giai đoạn 1 — Phân tích yêu cầu
+- Liệt kê toàn bộ chức năng cần có
+- Xác định các nhóm người dùng và quyền hạn
+- Xác định dữ liệu đầu vào, đầu ra của từng chức năng
+- Viết rõ quy tắc nhập hàng, bán hàng và cập nhật tồn kho
+- Xác định các báo cáo theo yêu cầu đề bài
+- Vẽ sơ đồ Use Case hoặc mô tả luồng nghiệp vụ
+
+Giai đoạn 2 — Thiết kế cơ sở dữ liệu
+- Tạo database QuanLyCuaHangTivi
+- Tạo các bảng danh mục
+- Tạo bảng nhân viên, khách hàng, nhà cung cấp
+- Tạo bảng hóa đơn nhập và chi tiết hóa đơn nhập
+- Tạo bảng hóa đơn bán và chi tiết hóa đơn bán
+- Khai báo khóa chính, khóa ngoại và ràng buộc
+- Xác định kiểu dữ liệu, giá trị mặc định và trường bắt buộc
+- Kiểm tra quan hệ giữa các bảng bằng dữ liệu mẫu
+
+Giai đoạn 3 — Khởi tạo dự án C#
+- Tạo project Windows Forms App bằng C#
+- Cấu hình phiên bản .NET phù hợp
+- Tạo cấu hình chuỗi kết nối SQL Server
+- Viết lớp DBConnection hoặc lớp quản lý kết nối
+- Tạo các thư mục Models, Data, Repositories, Services, Forms
+- Kiểm tra kết nối và thực hiện một câu SELECT thử nghiệm
+- Thiết lập Git hoặc sao lưu phiên bản đầu tiên
+
+Giai đoạn 4 — Xây dựng nền tảng dữ liệu
+- Tạo Model cho từng bảng
+- Tạo Repository cho các nhóm dữ liệu
+- Viết hàm lấy danh sách, tìm theo mã và thêm mới
+- Viết hàm cập nhật và xóa có kiểm tra ràng buộc
+- Dùng tham số SQL thay vì nối chuỗi truy vấn
+- Dùng using để giải phóng kết nối và tài nguyên
+- Kiểm thử từng Repository độc lập
+
+Giai đoạn 5 — Làm các chức năng CRUD
+- Quản lý hãng sản xuất
+- Quản lý kiểu dáng
+- Quản lý màu sắc
+- Quản lý loại màn hình
+- Quản lý cỡ màn hình
+- Quản lý nước sản xuất
+- Quản lý tivi
+- Quản lý nhân viên, ca làm và công việc
+- Quản lý khách hàng
+- Quản lý nhà cung cấp
+- Kiểm tra thêm, sửa, xóa, tìm kiếm và làm mới dữ liệu
+
+Giai đoạn 6 — Xây dựng nghiệp vụ nhập hàng
+- Tạo giao diện lập hóa đơn nhập
+- Chọn nhà cung cấp và nhân viên lập phiếu
+- Thêm nhiều tivi vào chi tiết hóa đơn
+- Kiểm tra số lượng, đơn giá và giảm giá hợp lệ
+- Tính thành tiền từng dòng và tổng tiền hóa đơn
+- Lưu hóa đơn và chi tiết trong một transaction
+- Tăng số lượng tồn kho sau khi nhập thành công
+- Cập nhật giá nhập mới theo quy tắc đã thống nhất
+- Xử lý rollback nếu một bước lưu thất bại
+
+Giai đoạn 7 — Xây dựng nghiệp vụ bán hàng
+- Tạo giao diện lập hóa đơn bán
+- Chọn khách hàng và nhân viên
+- Thêm tivi vào hóa đơn và nhập số lượng
+- Kiểm tra tồn kho trước khi bán
+- Tính thành tiền, giảm giá, thuế và tổng tiền
+- Lưu hóa đơn và chi tiết trong một transaction
+- Trừ tồn kho sau khi bán thành công
+- Chặn bán vượt quá số lượng còn lại
+- Xử lý rollback nếu lưu hóa đơn thất bại
+- Kiểm tra trường hợp hủy hoặc sửa hóa đơn
+
+Giai đoạn 8 — Hoàn thành quy tắc nghiệp vụ
+- Tự động cập nhật tồn kho khi nhập và bán
+- Tự động cập nhật giá nhập khi nhập hàng
+- Tính giá bán bằng 110% giá nhập theo yêu cầu
+- Thống nhất cách làm tròn giá tiền
+- Chặn số lượng âm và giá trị không hợp lệ
+- Quy định cách xử lý khi sửa hoặc hủy hóa đơn
+- Ngăn xóa dữ liệu danh mục đang được sử dụng
+- Đảm bảo hóa đơn và chi tiết hóa đơn không bị lệch dữ liệu
+
+Giai đoạn 9 — Tìm kiếm và thống kê
+- Tìm tivi theo hãng sản xuất
+- Tìm tivi theo loại màn hình
+- Tìm tivi theo cỡ màn hình
+- Tìm hóa đơn nhập theo mã tivi và số lượng nhập
+- Thống kê top 3 tivi được một khách hàng mua nhiều nhất
+- Thống kê hóa đơn nhập và tổng tiền theo nhà cung cấp
+- Thống kê hóa đơn bán và tổng tiền theo quý được chọn
+- Thống kê top 5 nhà cung cấp giao nhiều hàng theo tháng
+- Kiểm tra báo cáo với dữ liệu mẫu có kết quả tính trước
+
+Giai đoạn 10 — Giao diện và trải nghiệm
+- Tạo FormMain với menu điều hướng
+- Thiết kế bố cục và quy chuẩn màu sắc
+- Tạo màn hình đăng nhập nếu đề tài cần phân quyền
+- Hiển thị dữ liệu bằng DataGridView
+- Dùng ComboBox cho dữ liệu liên kết
+- Hiển thị thông báo lỗi và xác nhận xóa
+- Kiểm tra dữ liệu đầu vào trên mọi form
+- Hiển thị thông tin hóa đơn dễ đọc
+- Thêm chức năng làm mới, tìm kiếm và thoát an toàn
+
+Giai đoạn 11 — Kiểm thử và hoàn thiện
+- Kiểm tra CRUD trên từng bảng
+- Kiểm tra nhập hàng nhiều mặt hàng
+- Kiểm tra bán hàng đủ và thiếu tồn kho
+- Kiểm tra hóa đơn không có chi tiết
+- Kiểm tra dữ liệu trùng và dữ liệu bỏ trống
+- Kiểm tra lỗi kết nối database
+- Kiểm tra transaction và rollback
+- Đối chiếu tồn kho với tổng nhập trừ tổng bán
+- Đối chiếu số liệu báo cáo với dữ liệu nguồn
+- Sửa các lỗi tìm thấy và kiểm thử hồi quy
+
+Giai đoạn 12 — Đóng gói và báo cáo
+- Tạo script SQL tạo database và các bảng
+- Chuẩn bị dữ liệu mẫu để giảng viên kiểm thử
+- Cấu hình kết nối phù hợp với máy chạy
+- Đóng gói ứng dụng và kiểm tra trên môi trường khác
+- Viết tài liệu hướng dẫn cài đặt và sử dụng
+- Vẽ sơ đồ ERD và mô tả các bảng
+- Mô tả kiến trúc chương trình và chức năng
+- Chụp ảnh giao diện và kết quả báo cáo
+- Chuẩn bị slide và kịch bản demo
