@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F8F7BC6-1E3F-4C79-BE4D-DEE866437289}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9F8F7BC6-1E3F-4C79-BE4D-DEE866437289}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\appforms\\formmaincomponents\\paneldanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\appforms\\formmaincomponents\\paneldanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\appforms\\formmaincomponents\\paneldanhmuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\appforms\\formmaincomponents\\paneldanhmuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\appforms\\formmaincomponents\\ucdanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\appforms\\formmaincomponents\\ucdanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\appforms\\formdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\appforms\\formdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\appforms\\formmaincomponents\\paneldanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\appforms\\formmaincomponents\\paneldanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\appforms\\formmaincomponents\\ucdanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\appforms\\formmaincomponents\\ucdanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\appforms\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\appforms\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|c:\\users\\pham quang khai\\documents\\projects\\c#_projects\\baitaplonnhom2\\source\\tivimanagementapp\\tivimanagementapp\\repositories\\tivirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3B336D-BE5B-7073-EE6B-ECFBFEAD7C98}|TiviManagementApp\\TiviManagementApp.csproj|solutionrelative:tivimanagementapp\\repositories\\tivirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,16 +61,133 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TiviRepositories.cs",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\Repositories\\TiviRepositories.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\Repositories\\TiviRepositories.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\Repositories\\TiviRepositories.cs",
+              "RelativeToolTip": "TiviManagementApp\\Repositories\\TiviRepositories.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAADwvxEBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T03:11:28.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PanelDanhMuc.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.Designer.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.Designer.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.Designer.cs*",
+              "RelativeToolTip": "TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.Designer.cs*",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwF8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T02:58:47.406Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\Form1.cs",
-              "RelativeDocumentMoniker": "TiviManagementApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\Form1.cs [Design]",
-              "RelativeToolTip": "TiviManagementApp\\Form1.cs [Design]",
+              "Title": "PanelDanhMuc.cs",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs*",
+              "RelativeToolTip": "TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAywEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T02:02:40.857Z",
+              "WhenOpened": "2026-10-24T02:25:34.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UcDanhMuc.cs",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs",
+              "RelativeToolTip": "TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAmwLMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T02:38:53.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormDetail.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\AppForms\\FormDetail.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormDetail.cs",
+              "RelativeToolTip": "TiviManagementApp\\AppForms\\FormDetail.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T02:40:50.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PanelDanhMuc.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs [Design]*",
+              "RelativeToolTip": "TiviManagementApp\\AppForms\\FormMainComponents\\PanelDanhMuc.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T01:41:15.74Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UcDanhMuc.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs [Design]",
+              "RelativeToolTip": "TiviManagementApp\\AppForms\\FormMainComponents\\UcDanhMuc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T01:34:26.668Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormMain.cs",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMain.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\AppForms\\FormMain.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\AppForms\\FormMain.cs",
+              "RelativeToolTip": "TiviManagementApp\\AppForms\\FormMain.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T00:31:42.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\Program.cs",
+              "RelativeDocumentMoniker": "TiviManagementApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Pham Quang Khai\\Documents\\Projects\\C#_projects\\BaiTapLonNhom2\\Source\\TiviManagementApp\\TiviManagementApp\\Program.cs",
+              "RelativeToolTip": "TiviManagementApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T02:08:32.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data.SqlClient;
 
 namespace TiviManagementApp.Data
 {
@@ -8,7 +9,7 @@ namespace TiviManagementApp.Data
     {
         private static readonly string connectionString =
         @"Server=localhost\SQLEXPRESS;
-          Database=[NAME HERE];
+          Database=TelevisionDB;
           Trusted_Connection=True;
           TrustServerCertificate=True;";
 

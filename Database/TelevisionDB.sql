@@ -221,14 +221,14 @@ INSERT INTO HangSanXuat VALUES
 ('HSX05', N'Xiaomi');
 
 INSERT INTO KieuDang VALUES
-('KD01', N'Tivi phang'),
+('KD01', N'Tivi phẳng'),
 ('KD02', N'Tivi cong'),
 ('KD03', N'Tivi khung tranh');
 
 INSERT INTO MauSac VALUES
-('M01', N'Den'),
-('M02', N'Bac'),
-('M03', N'Trang');
+('M01', N'Đen'),
+('M02', N'Bạc'),
+('M03', N'Trắng');
 
 INSERT INTO ManHinh VALUES
 ('MH01', N'LED'),
@@ -246,21 +246,21 @@ INSERT INTO CoManHinh VALUES
 ('C75', 75);
 
 INSERT INTO NuocSanXuat VALUES
-('N01', N'Han Quoc'),
-('N02', N'Nhat Ban'),
-('N03', N'Trung Quoc'),
-('N04', N'Viet Nam');
+('N01', N'Hàn Quốc'),
+('N02', N'Nhật Bản'),
+('N03', N'Trung Quốc'),
+('N04', N'Việt Nam');
 
 INSERT INTO CaLam VALUES
-('CA01', N'Ca sang', '08:00', '12:00'),
-('CA02', N'Ca chieu', '13:00', '17:00'),
-('CA03', N'Ca toi', '17:00', '21:00');
+('CA01', N'Ca sáng', '08:00', '12:00'),
+('CA02', N'Ca chiều', '13:00', '17:00'),
+('CA03', N'Ca tối', '17:00', '21:00');
 
 INSERT INTO CongViec VALUES
-('CV01', N'Quan ly'),
-('CV02', N'Thu ngan'),
-('CV03', N'Ban hang'),
-('CV04', N'Kho hang');
+('CV01', N'Quản lý'),
+('CV02', N'Thu ngân'),
+('CV03', N'Bán hàng'),
+('CV04', N'Kho hàng');
 
 
 /* =========================================================
