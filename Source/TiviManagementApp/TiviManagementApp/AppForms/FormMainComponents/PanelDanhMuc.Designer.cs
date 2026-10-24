@@ -197,6 +197,7 @@
             pickImageBtn.TabIndex = 31;
             pickImageBtn.Text = "Chọn ảnh";
             pickImageBtn.UseVisualStyleBackColor = true;
+            pickImageBtn.Click += pickImageBtn_Click;
             // 
             // label13
             // 
@@ -209,6 +210,7 @@
             // 
             // imageBox
             // 
+            imageBox.BackColor = Color.FromArgb(217, 221, 229);
             imageBox.Location = new Point(32, 454);
             imageBox.Name = "imageBox";
             imageBox.Size = new Size(183, 171);
@@ -425,6 +427,7 @@
             cancelBtn.TabIndex = 4;
             cancelBtn.Text = "Hủy";
             cancelBtn.UseVisualStyleBackColor = true;
+            cancelBtn.Click += cancelBtn_Click;
             // 
             // saveBtn
             // 
@@ -434,6 +437,7 @@
             saveBtn.TabIndex = 3;
             saveBtn.Text = "Lưu";
             saveBtn.UseVisualStyleBackColor = true;
+            saveBtn.Click += saveBtn_Click;
             // 
             // deleteBtn
             // 
@@ -443,6 +447,7 @@
             deleteBtn.TabIndex = 2;
             deleteBtn.Text = "Xóa";
             deleteBtn.UseVisualStyleBackColor = true;
+            deleteBtn.Click += deleteBtn_Click;
             // 
             // editBtn
             // 
@@ -452,6 +457,7 @@
             editBtn.TabIndex = 1;
             editBtn.Text = "Sửa";
             editBtn.UseVisualStyleBackColor = true;
+            editBtn.Click += editBtn_Click;
             // 
             // addBtn
             // 

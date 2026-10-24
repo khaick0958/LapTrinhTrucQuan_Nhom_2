@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using TiviManagementApp.Data;
@@ -64,6 +65,11 @@ namespace TiviManagementApp.Repositories
                                 MaTivi = dataReader["MaTivi"].ToString(),
                                 TenTivi = dataReader["TenTivi"].ToString(),
                                 MaHang = dataReader["MaHang"].ToString(),
+                                MaMau = dataReader["MaMau"].ToString(),
+                                MaCo = dataReader["MaCo"].ToString(),
+                                MaKieu = dataReader["MaKieu"].ToString(),
+                                MaManHinh = dataReader["MaManHinh"].ToString(),
+                                MaNuoc = dataReader["MaNuoc"].ToString(),
                                 SoLuong = Convert.ToInt32(dataReader["SoLuong"]),
                                 GiaNhap = Convert.ToDecimal(dataReader["GiaNhap"]),
                                 GiaBan = Convert.ToDecimal(dataReader["GiaBan"]),
@@ -161,148 +167,310 @@ namespace TiviManagementApp.Repositories
             }
         }
 
-        public List<string> GetAllColors()
+        public List<MauSac> GetAllColors()
         {
-            List<string> danhSach = new List<string>();
-
-            string sql = @"SELECT TenMau FROM MauSac";
+            List<MauSac> danhSach = new List<MauSac>();
+            string sql = "SELECT MaMau, TenMau FROM MauSac";
 
             using (SqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
-                using (SqlDataReader dataReader = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (dataReader.Read())
+                    while (reader.Read())
                     {
-                        string x = dataReader["TenMau"].ToString();
-
-                        danhSach.Add(x);
+                        danhSach.Add(new MauSac
+                        {
+                            MaMau = reader["MaMau"].ToString() ?? "",
+                            TenMau = reader["TenMau"].ToString() ?? ""
+                        });
                     }
                 }
             }
+
             return danhSach;
         }
 
-        public List<string> GetAllBranches()
+        public List<HangSanXuat> GetAllBranches()
         {
-            List<string> danhSach = new List<string>();
-
-            string sql = @"SELECT TenHang FROM HangSanXuat";
+            List<HangSanXuat> danhSach = new List<HangSanXuat>();
+            string sql = "SELECT MaHang, TenHang FROM HangSanXuat";
 
             using (SqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
-                using (SqlDataReader dataReader = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (dataReader.Read())
+                    while (reader.Read())
                     {
-                        string x = dataReader["TenHang"].ToString();
-
-                        danhSach.Add(x);
+                        danhSach.Add(new HangSanXuat
+                        {
+                            MaHang = reader["MaHang"].ToString() ?? "",
+                            TenHang = reader["TenHang"].ToString() ?? ""
+                        });
                     }
                 }
             }
+
             return danhSach;
         }
 
-        public List<string> GetAllScreens()
+        public List<ManHinh> GetAllScreens()
         {
-            List<string> danhSach = new List<string>();
-
-            string sql = @"SELECT TenManHinh FROM ManHinh";
+            List<ManHinh> danhSach = new List<ManHinh>();
+            string sql = "SELECT MaManHinh, TenManHinh FROM ManHinh";
 
             using (SqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
-                using (SqlDataReader dataReader = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (dataReader.Read())
+                    while (reader.Read())
                     {
-                        string x = dataReader["TenManHinh"].ToString();
-
-                        danhSach.Add(x);
+                        danhSach.Add(new ManHinh
+                        {
+                            MaManHinh = reader["MaManHinh"].ToString() ?? "",
+                            TenManHinh = reader["TenManHinh"].ToString() ?? ""
+                        });
                     }
                 }
             }
+
             return danhSach;
         }
 
-        public List<string> GetAllStyles()
+        public List<KieuDang> GetAllStyles()
         {
-            List<string> danhSach = new List<string>();
-
-            string sql = @"SELECT TenKieu FROM KieuDang";
+            List<KieuDang> danhSach = new List<KieuDang>();
+            string sql = "SELECT MaKieu, TenKieu FROM KieuDang";
 
             using (SqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
-                using (SqlDataReader dataReader = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (dataReader.Read())
+                    while (reader.Read())
                     {
-                        string x = dataReader["TenKieu"].ToString();
-
-                        danhSach.Add(x);
+                        danhSach.Add(new KieuDang
+                        {
+                            MaKieu = reader["MaKieu"].ToString() ?? "",
+                            TenKieu = reader["TenKieu"].ToString() ?? ""
+                        });
                     }
                 }
             }
+
             return danhSach;
         }
 
-        public List<int> GetAllSizes()
+        public List<CoManHinh> GetAllSizes()
         {
-            List<int> danhSach = new List<int>();
-
-            string sql = @"SELECT KichThuocInch FROM CoManHinh";
+            List<CoManHinh> danhSach = new List<CoManHinh>();
+            string sql = "SELECT MaCo, KichThuocInch FROM CoManHinh";
 
             using (SqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
-                using (SqlDataReader dataReader = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (dataReader.Read())
+                    while (reader.Read())
                     {
-                        int x = Convert.ToInt32(dataReader["KichThuocInch"]);
-
-                        danhSach.Add(x);
+                        danhSach.Add(new CoManHinh
+                        {
+                            MaCo = reader["MaCo"].ToString() ?? "",
+                            KichThuocInch = Convert.ToInt32(reader["KichThuocInch"])
+                        });
                     }
                 }
             }
+
             return danhSach;
         }
 
-        public List<string> GetAllCountries()
+        public List<NuocSanXuat> GetAllCountries()
         {
-            List<string> danhSach = new List<string>();
-
-            string sql = @"SELECT TenNuoc FROM NuocSanXuat";
+            List<NuocSanXuat> danhSach = new List<NuocSanXuat>();
+            string sql = "SELECT MaNuoc, TenNuoc FROM NuocSanXuat";
 
             using (SqlConnection conn = DBConnection.GetConnection())
             {
                 conn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
-                using (SqlDataReader dataReader = cmd.ExecuteReader())
+                using (SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    while (dataReader.Read())
+                    while (reader.Read())
                     {
-                        string x = dataReader["TenNuoc"].ToString();
-
-                        danhSach.Add(x);
+                        danhSach.Add(new NuocSanXuat
+                        {
+                            MaNuoc = reader["MaNuoc"].ToString() ?? "",
+                            TenNuoc = reader["TenNuoc"].ToString() ?? ""
+                        });
                     }
                 }
             }
+
             return danhSach;
+        }
+
+        public bool Insert(Tivi tv)
+        {
+            string sql = @"
+        INSERT INTO Tivi
+        (
+            MaTivi,
+            TenTivi,
+            MaHang,
+            MaKieu,
+            MaMau,
+            MaManHinh,
+            MaCo,
+            MaNuoc,
+            SoLuong,
+            GiaNhap,
+            ThoiGianBaoHanhThang,
+            Anh
+        )
+        VALUES
+        (
+            @MaTivi,
+            @TenTivi,
+            @MaHang,
+            @MaKieu,
+            @MaMau,
+            @MaManHinh,
+            @MaCo,
+            @MaNuoc,
+            @SoLuong,
+            @GiaNhap,
+            @ThoiGianBaoHanhThang,
+            @Anh
+        );";
+
+            using (SqlConnection conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    AddTiviParameters(cmd, tv);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        public bool Update(Tivi tv)
+        {
+            string sql = @"
+        UPDATE Tivi
+        SET
+            TenTivi = @TenTivi,
+            MaHang = @MaHang,
+            MaKieu = @MaKieu,
+            MaMau = @MaMau,
+            MaManHinh = @MaManHinh,
+            MaCo = @MaCo,
+            MaNuoc = @MaNuoc,
+            SoLuong = @SoLuong,
+            GiaNhap = @GiaNhap,
+            ThoiGianBaoHanhThang = @ThoiGianBaoHanhThang,
+            Anh = @Anh
+        WHERE MaTivi = @MaTivi;";
+
+            using (SqlConnection conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    AddTiviParameters(cmd, tv);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        public bool Delete(string maTivi)
+        {
+            string sql = @"
+        DELETE FROM Tivi
+        WHERE MaTivi = @MaTivi
+          AND NOT EXISTS (
+              SELECT 1
+              FROM ChiTietHoaDonNhap
+              WHERE MaTivi = @MaTivi
+          )
+          AND NOT EXISTS (
+              SELECT 1
+              FROM ChiTietHoaDonBan
+              WHERE MaTivi = @MaTivi
+          );";
+
+            using (SqlConnection conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@MaTivi", maTivi);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        private void AddTiviParameters(SqlCommand cmd, Tivi tv)
+        {
+            cmd.Parameters.Add("@MaTivi", SqlDbType.VarChar, 10)
+                .Value = tv.MaTivi;
+
+            cmd.Parameters.Add("@TenTivi", SqlDbType.NVarChar, 150)
+                .Value = tv.TenTivi;
+
+            cmd.Parameters.Add("@MaHang", SqlDbType.VarChar, 10)
+                .Value = tv.MaHang;
+
+            cmd.Parameters.Add("@MaKieu", SqlDbType.VarChar, 10)
+                .Value = (object?)tv.MaKieu ?? DBNull.Value;
+
+            cmd.Parameters.Add("@MaMau", SqlDbType.VarChar, 10)
+                .Value = (object?)tv.MaMau ?? DBNull.Value;
+
+            cmd.Parameters.Add("@MaManHinh", SqlDbType.VarChar, 10)
+                .Value = (object?)tv.MaManHinh ?? DBNull.Value;
+
+            cmd.Parameters.Add("@MaCo", SqlDbType.VarChar, 10)
+                .Value = (object?)tv.MaCo ?? DBNull.Value;
+
+            cmd.Parameters.Add("@MaNuoc", SqlDbType.VarChar, 10)
+                .Value = (object?)tv.MaNuoc ?? DBNull.Value;
+
+            cmd.Parameters.Add("@SoLuong", SqlDbType.Int)
+                .Value = tv.SoLuong;
+
+            SqlParameter giaNhapParam =
+                cmd.Parameters.Add("@GiaNhap", SqlDbType.Decimal);
+
+            giaNhapParam.Precision = 18;
+            giaNhapParam.Scale = 2;
+            giaNhapParam.Value = tv.GiaNhap;
+
+            cmd.Parameters.Add("@ThoiGianBaoHanhThang", SqlDbType.Int)
+                .Value = tv.ThoiGianBaoHanhThang;
+
+            cmd.Parameters.Add("@Anh", SqlDbType.NVarChar, 255)
+                .Value = (object?)tv.Anh ?? DBNull.Value;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace QuanLyCuaHangTivi
 {
-    partial class PanelNhanVien
+    partial class PanelBanHang
     {
         private System.ComponentModel.IContainer components = null;
 

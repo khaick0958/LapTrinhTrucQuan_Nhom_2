@@ -20,7 +20,7 @@ namespace TiviManagementApp
             {
                 errorMsg.Visible = false;
 
-                FormMain form = new FormMain();
+                FormMain form = new FormMain(usernameTextBox.Text);
 
                 form.FormClosed += (s, args) =>
                 {

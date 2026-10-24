@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TiviManagementApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67a2e00806638bf26e6cfb8928ce31d0853c2a6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02c1b96252e8392ba1785d588d8f3f55762d1bed")]
 [assembly: System.Reflection.AssemblyProductAttribute("TiviManagementApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TiviManagementApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

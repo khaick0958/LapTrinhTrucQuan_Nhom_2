@@ -15,7 +15,7 @@ namespace QuanLyCuaHangTivi
         private readonly Dictionary<Button, Func<UserControl>> _pageFactories;
         private readonly Dictionary<Button, UserControl> _pageCache = new Dictionary<Button, UserControl>();
 
-        public FormMain()
+        public FormMain(string username)
         {
             InitializeComponent();
 
@@ -25,12 +25,15 @@ namespace QuanLyCuaHangTivi
                 { btnDanhMuc,     () => new PanelDanhMuc() },
                 { btnTimKiem,     () => new PanelTimKiem() },
                 { btnNhapHang,    () => new PanelNhapHang() },
-                { btnNhanVien,    () => new PanelNhanVien() },
+                { btnBanHang,    () => new PanelBanHang() },
                 { btnNhaCungCap,  () => new PanelNhaCungCap() },
                 { btnThongKe,     () => new PanelThongKe() },
             };
 
             Load += (s, e) => ShowPage(btnTrangChu);
+
+            lblUserName.Text = username;
+            lblUserRole.Text = "Quản lý";
         }
 
         public void SetUserInfo(string name, string role)

@@ -22,7 +22,7 @@
     <Compile Update="AppForms\FormMainComponents\PanelNhaCungCap.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="AppForms\FormMainComponents\PanelNhanVien.cs">
+    <Compile Update="AppForms\FormMainComponents\PanelBanHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="AppForms\FormMainComponents\PanelNhapHang.cs">

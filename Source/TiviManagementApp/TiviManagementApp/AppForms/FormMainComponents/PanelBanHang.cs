@@ -2,9 +2,9 @@
 
 namespace QuanLyCuaHangTivi
 {
-    public partial class PanelNhanVien : UserControl
+    public partial class PanelBanHang : UserControl
     {
-        public PanelNhanVien()
+        public PanelBanHang()
         {
             InitializeComponent();
         }

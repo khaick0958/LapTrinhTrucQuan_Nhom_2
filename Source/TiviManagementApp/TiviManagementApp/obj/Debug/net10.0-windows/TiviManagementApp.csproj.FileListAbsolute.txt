@@ -75,3 +75,5 @@ C:\Users\Pham Quang Khai\Documents\Projects\C#_projects\BaiTapLonNhom2\Source\Ti
 C:\Users\Pham Quang Khai\Documents\Projects\C#_projects\BaiTapLonNhom2\Source\TiviManagementApp\TiviManagementApp\obj\Debug\net10.0-windows\QuanLyCuaHangTivi.PanelDanhMuc.resources
 C:\Users\Pham Quang Khai\Documents\Projects\C#_projects\BaiTapLonNhom2\Source\TiviManagementApp\TiviManagementApp\obj\Debug\net10.0-windows\QuanLyCuaHangTivi.PanelNhaCungCap.resources
 C:\Users\Pham Quang Khai\Documents\Projects\C#_projects\BaiTapLonNhom2\Source\TiviManagementApp\TiviManagementApp\obj\Debug\net10.0-windows\QuanLyCuaHangTivi.PanelTrangChu.resources
+C:\Users\Pham Quang Khai\Documents\Projects\C#_projects\BaiTapLonNhom2\Source\TiviManagementApp\TiviManagementApp\obj\Debug\net10.0-windows\QuanLyCuaHangTivi.FormMain.resources
+C:\Users\Pham Quang Khai\Documents\Projects\C#_projects\BaiTapLonNhom2\Source\TiviManagementApp\TiviManagementApp\bin\Debug\net10.0-windows\Images\Cat_in_war.png
