@@ -44,6 +44,78 @@ namespace TiviManagementApp.Repositories
             return danhSach;
         }
 
+        public List<TiviDetail> GetAllDetails()
+        {
+            List<TiviDetail> danhSachBetter = new List<TiviDetail>();
+
+            string sql = @"
+        SELECT
+            t.MaTivi,
+            t.TenTivi,
+            hsx.TenHang AS TenHang,
+            kd.TenKieu AS TenKieu,
+            ms.TenMau AS TenMau,
+            mh.TenManHinh AS TenManHinh,
+            cm.KichThuocInch AS KichThuocInch,
+            nsx.TenNuoc AS TenNuoc,
+            t.SoLuong,
+            t.GiaNhap,
+            t.GiaBan,
+            t.ThoiGianBaoHanhThang,
+            t.Anh
+        FROM Tivi t
+        LEFT JOIN HangSanXuat hsx ON t.MaHang = hsx.MaHang
+        LEFT JOIN KieuDang kd ON t.MaKieu = kd.MaKieu
+        LEFT JOIN MauSac ms ON t.MaMau = ms.MaMau
+        LEFT JOIN ManHinh mh ON t.MaManHinh = mh.MaManHinh
+        LEFT JOIN CoManHinh cm ON t.MaCo = cm.MaCo
+        LEFT JOIN NuocSanXuat nsx ON t.MaNuoc = nsx.MaNuoc;";
+
+            using (SqlConnection conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        TiviDetail tivi = new TiviDetail
+                        {
+                            MaTivi = reader["MaTivi"].ToString() ?? "",
+                            TenTivi = reader["TenTivi"].ToString() ?? "",
+
+                            TenHang = reader["TenHang"].ToString() ?? "",
+                            TenKieu = reader["TenKieu"].ToString() ?? "",
+                            TenMau = reader["TenMau"].ToString() ?? "",
+                            TenManHinh = reader["TenManHinh"].ToString() ?? "",
+
+                            CoManHinh = reader["KichThuocInch"] == DBNull.Value
+                                ? 0
+                                : Convert.ToInt32(reader["KichThuocInch"]),
+
+                            TenNuoc = reader["TenNuoc"].ToString() ?? "",
+
+                            SoLuong = Convert.ToInt32(reader["SoLuong"]),
+                            GiaNhap = Convert.ToDecimal(reader["GiaNhap"]),
+                            GiaBan = Convert.ToDecimal(reader["GiaBan"]),
+
+                            ThoiGianBaoHanhThang =
+                                Convert.ToInt32(reader["ThoiGianBaoHanhThang"]),
+
+                            Anh = reader["Anh"] == DBNull.Value
+                                ? null
+                                : reader["Anh"].ToString()
+                        };
+
+                        danhSachBetter.Add(tivi);
+                    }
+                }
+            }
+
+            return danhSachBetter;
+        }
+
         public Tivi SearchByID(string id)
         {
             string sql = "SELECT * FROM Tivi WHERE MaTivi = @id";
@@ -82,6 +154,93 @@ namespace TiviManagementApp.Repositories
             }
 
             return null;
+        }
+
+        public List<TiviDetail> SearchTiviByFilters(string? maHang,string? maManHinh,string? maCo)
+        {
+            List<TiviDetail> danhSachBetter = new List<TiviDetail>();
+
+            string sql = @"
+        SELECT
+            t.MaTivi,
+            t.TenTivi,
+            hsx.TenHang AS TenHang,
+            kd.TenKieu AS TenKieu,
+            ms.TenMau AS TenMau,
+            mh.TenManHinh AS TenManHinh,
+            cm.KichThuocInch AS KichThuocInch,
+            nsx.TenNuoc AS TenNuoc,
+            t.SoLuong,
+            t.GiaNhap,
+            t.GiaBan,
+            t.ThoiGianBaoHanhThang,
+            t.Anh
+        FROM Tivi t
+        LEFT JOIN HangSanXuat hsx ON t.MaHang = hsx.MaHang
+        LEFT JOIN KieuDang kd ON t.MaKieu = kd.MaKieu
+        LEFT JOIN MauSac ms ON t.MaMau = ms.MaMau
+        LEFT JOIN ManHinh mh ON t.MaManHinh = mh.MaManHinh
+        LEFT JOIN CoManHinh cm ON t.MaCo = cm.MaCo
+        LEFT JOIN NuocSanXuat nsx ON t.MaNuoc = nsx.MaNuoc
+        WHERE
+            (@MaHang IS NULL OR @MaHang = '' OR t.MaHang = @MaHang)
+            AND (@MaManHinh IS NULL OR @MaManHinh = ''
+                 OR t.MaManHinh = @MaManHinh)
+            AND (@MaCo IS NULL OR @MaCo = ''
+                 OR t.MaCo = @MaCo);";
+
+            using (SqlConnection conn = DBConnection.GetConnection())
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue(
+                        "@MaHang", (object?)maHang ?? DBNull.Value);
+
+                    cmd.Parameters.AddWithValue(
+                        "@MaManHinh", (object?)maManHinh ?? DBNull.Value);
+
+                    cmd.Parameters.AddWithValue(
+                        "@MaCo", (object?)maCo ?? DBNull.Value);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            TiviDetail tivi = new TiviDetail
+                            {
+                                MaTivi = reader["MaTivi"].ToString() ?? "",
+                                TenTivi = reader["TenTivi"].ToString() ?? "",
+                                TenHang = reader["TenHang"].ToString() ?? "",
+                                TenKieu = reader["TenKieu"].ToString() ?? "",
+                                TenMau = reader["TenMau"].ToString() ?? "",
+                                TenManHinh = reader["TenManHinh"].ToString() ?? "",
+
+                                CoManHinh = reader["KichThuocInch"] == DBNull.Value
+                                    ? 0
+                                    : Convert.ToInt32(reader["KichThuocInch"]),
+
+                                TenNuoc = reader["TenNuoc"].ToString() ?? "",
+                                SoLuong = Convert.ToInt32(reader["SoLuong"]),
+                                GiaNhap = Convert.ToDecimal(reader["GiaNhap"]),
+                                GiaBan = Convert.ToDecimal(reader["GiaBan"]),
+
+                                ThoiGianBaoHanhThang = Convert.ToInt32(
+                                    reader["ThoiGianBaoHanhThang"]),
+
+                                Anh = reader["Anh"] == DBNull.Value
+                                    ? null
+                                    : reader["Anh"].ToString()
+                            };
+
+                            danhSachBetter.Add(tivi);
+                        }
+                    }
+                }
+            }
+
+            return danhSachBetter;
         }
 
         public TiviDetail? GetDetailByID(string maTivi)
